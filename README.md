@@ -1,4 +1,6 @@
-# barbershop
+# Барбершоп «Бородинский»
 Проект сайта Барбершоп «Бородинский»
 
-[Главная страница:](https://vaivankov.github.io/barbershop/ "barbershop")
+Автор макета: [HTML Academy](https://htmlacademy.ru/)
+
+Главная страница: [barbershop](https://vaivankov.github.io/barbershop/)
