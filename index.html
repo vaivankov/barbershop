@@ -147,8 +147,31 @@
   <section>
     <h2>Как до нас добраться</h2>
     <p>
-      <img src="img/common/map.png" alt="Расположение офиса компании на карте по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <img src="img/common/map.png"
+        alt="Расположение офиса компании на карте по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </p>
+    <button type="button">Закрыть</button>
+  </section>
+  <section>
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль</p>
+    <form class="user" method="POST" action="">
+      <p>
+        <label for="user-login">Логин</label>
+        <input id="user-login" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+        <label for="user-password">Пароль</label>
+        <input id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="remember">
+          Запомнить меня
+        </label>
+      </p>
+      <button type="submit">Войти</button>
+    </form>
     <button type="button">Закрыть</button>
   </section>
 </body>
