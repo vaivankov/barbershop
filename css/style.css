@@ -101,14 +101,3 @@ a {
   background: #cccccc;
   border: 7px solid #ffffff;
 }
-
-.appointment-item input {
-  font: inherit;
-
-  background-color: transparent;
-  border: 2px solid #000000;
-}
-
-.appointment-item input:focus {
-  border-color: #663d15;
-}
