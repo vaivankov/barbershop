@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Барбершоп «Бородинский»</title>
@@ -162,35 +163,37 @@
       <a class="button" href="http://s95864mn.beget.tech/">Виталий Иваньков</a>
     </p>
   </footer>
-  <section>
-    <h2>Как до нас добраться</h2>
-    <p>
-      <img src="img/common/map.png"
-        alt="Расположение офиса компании на карте по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-    </p>
-    <button type="button">Закрыть</button>
-  </section>
-  <section>
+  <section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль</p>
-    <form class="user" method="POST" action="">
+    <form class="login-form" method="POST" action="https://echo.htmlacademy.ru">
       <p>
-        <label for="user-login">Логин</label>
-        <input id="user-login" type="text" name="login" placeholder="Логин">
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
       </p>
       <p>
-        <label for="user-password">Пароль</label>
-        <input id="user-password" type="password" name="password" placeholder="Пароль">
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input id="user-password" type="password" name="password" placeholder="&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149">
       </p>
-      <p>
-        <label>
-          <input type="checkbox" name="remember">
+      <p class="login-password-info">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
           Запомнить меня
         </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
       </p>
-      <button type="submit">Войти</button>
+      <button class="button" type="submit">Войти</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p>
+      <img src="img/common/map.png" width="780" height="560"
+        alt="Расположение офиса компании на карте по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    </p>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 
