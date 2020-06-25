@@ -12,29 +12,37 @@
 </head>
 
 <body>
+
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/icon/index-logo.svg" width="371" height="155" alt="Логотип барбершопа «Бородинский»">
       </a>
-      <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="price.html">Прайс-лист</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li>
-          <a class="login-link" href="login.html">
-            Вход
-          </a>
-        </li>
-      </ul>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li>
+              <a class="login-link" href="login.html">
+                Вход
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
+
   <main>
+
     <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
+
     <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features-list">
@@ -55,6 +63,7 @@
         </li>
       </ul>
     </section>
+
     <div class="index-columns">
       <section class="news">
         <h2>Новости</h2>
@@ -82,6 +91,7 @@
         <button class="button gallery-button gallery-button-next" type="button">Вперёд</button>
       </section>
     </div>
+
     <div class="index-columns">
       <section class="contacts">
         <h2>Контактная информация</h2>
@@ -130,7 +140,9 @@
         </form>
       </section>
     </div>
+
   </main>
+
   <footer class="main-footer">
     <p class="footer-contacts">
       Барбершоп «Бородинский»<br>
@@ -138,6 +150,7 @@
       <a href="map.html">Как нас найти?</a><br>
       Телефон: +7 (495) 666-02-66
     </p>
+
     <div class="footer-social">
       <b>Давайте дружить!</b>
       <ul>
@@ -158,11 +171,13 @@
         </li>
       </ul>
     </div>
+
     <p class="footer-copyright">
       <b>Вёрстка:</b>
       <a class="button" href="http://s95864mn.beget.tech/">Виталий Иваньков</a>
     </p>
   </footer>
+
   <section class="modal modal-login">
     <h2>Личный кабинет</h2>
     <p>Введите свой логин и пароль</p>
@@ -173,7 +188,8 @@
       </p>
       <p>
         <label class="visually-hidden" for="user-password">Пароль</label>
-        <input id="user-password" type="password" name="password" placeholder="&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149">
+        <input id="user-password" type="password" name="password"
+          placeholder="&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149">
       </p>
       <p class="login-password-info">
         <label class="login-checkbox">
@@ -187,6 +203,7 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <p>
@@ -195,6 +212,7 @@
     </p>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+
 </body>
 
 </html>

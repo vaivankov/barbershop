@@ -197,3 +197,125 @@ a {
 .restore:focus {
 	text-decoration: none;
 }
+
+.container{
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-header {
+	margin-bottom: 75px;
+}
+
+.main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-header-logo {
+	order: 2;
+	width: 368px;
+	height: 153px;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+	margin-bottom: 60px;
+
+	background-color: #000000;
+}
+
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 70px;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 500px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.user-navigation {
+	display: flex;
+	justify-content: flex-end;
+	width: 140px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+.login-link {
+}
+.visually-hidden {
+}
+.features {
+}
+.features-list {
+}
+.feature-item {
+}
+.index-columns {
+}
+.news {
+}
+.news-list {
+}
+.news-item {
+}
+.button {
+}
+.gallery {
+}
+.gallery-content {
+}
+.button.gallery-button.gallery-button-back {
+}
+.button.gallery-button.gallery-button-next {
+}
+.contacts {
+}
+.appointment {
+}
+.appointment-info {
+}
+.appointment-form {
+}
+.appointment-item {
+}
+.main-footer {
+}
+.footer-contacts {
+}
+.footer-social {
+}
+.social-button {
+}
+.footer-copyright {
+}
+.modal.modal-login {
+}
+.login-form {
+}
+.login-icon-user {
+}
+.login-password-info {
+}
+.login-checkbox {
+}
+.checkbox-indicator {
+}
+.restore {
+}
+.modal-close {
+}
+.modal.modal-map {
+}
