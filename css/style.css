@@ -195,6 +195,13 @@ img {
 	border-color: #663d15;
 }
 
+.appointment .button {
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	margin-right: 0;
+}
+
 .main-footer {
 	color: #ffffff;
 
@@ -430,40 +437,48 @@ img {
 	width: 350px;
 }
 
+.contacts p {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
 .appointment {
 	width: 300px;
 }
 
 .appointment-info {
 	margin: 0;
-	margin-bottom: 10px;
-}
-
-.appointment-form {
-}
-
-.appointment-wrapper {
-	display: flex;
-	justify-content: space-between;
-}
-
-.appointment-wrapper:last-of-type {
 	margin-bottom: 15px;
 }
 
-.appointment-item {
+.appointment-form {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.appointment-item {
+	width: 140px;
 	margin: 0;
-}
-
-.appointment-item > input {
-	min-height: 40px;
-	width: 135px;
-}
-
-.appointment-item > label {
 	margin-bottom: 10px;
+}
+
+.appointment-item input {
+	box-sizing: border-box;
+	width: 140px;
+	padding: 6px 15px 6px 7px;
+
+	font: inherit;
+}
+
+.appointment-item input:focus {
+	border-color: #663d15;
+}
+
+.appointment-item label {
+	display: block;
+	margin-bottom: 5px;
+	margin-left: 15px;
 }
 
 .main-footer {
