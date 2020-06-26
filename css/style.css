@@ -43,8 +43,11 @@ img {
 }
 
 .button {
-	font: inherit;
+	display: inline-block;
+	margin-right: 15px;
+	padding: 10px 30px;
 
+	font: inherit;
 	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
@@ -58,6 +61,13 @@ img {
 .button:focus,
 .button:active {
 	background-color: #663d15;
+}
+
+.button.disabled,
+.button:disabled {
+	cursor: default;
+	opacity: 0.5;
+	background-color: #000000;
 }
 
 .main-navigation {
@@ -108,7 +118,7 @@ img {
 }
 
 .feature-item h3::after {
-	content: '';
+	content: "";
 
 	position: absolute;
 	bottom: -30px;
@@ -128,31 +138,51 @@ img {
 }
 
 .index-columns {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 80px;
+	margin-bottom: 35px;
+
 	color: #000000;
 
 	background-color: #f8f5f2;
-	background-image: url("../img/common/pattern-light.png");
-	background-position: 0 0;
-	background-repeat: repeat;
+	background-image: url("../img/common/line.png"),
+		url("../img/common/pattern-light.png");
+	background-position: center, 0 0;
+	background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2 {
+	margin: 0;
+	margin-bottom: 25px;
+
 	font-size: 30px;
-	line-height: 42px;
+	line-height: 30px;
 }
 
-.news-list {
-	list-style: none;
+.gallery {
+	width: 300px;
 }
 
-.news-list time {
-	text-transform: none;
+.gallery-container{
+	position: relative;
+
+	height: 260px;
 }
 
 .gallery-content {
+	height: 164px;
+	margin: 0;
+
 	background: #cccccc;
 	border: 7px solid #ffffff;
 }
+
+.gallery-content img {
+	width: 286px;
+	height: 164px;
+}
+
 
 .appointment-item input {
 	font: inherit;
@@ -313,7 +343,7 @@ img {
 }
 
 .login-link::before {
-	content: '';
+	content: "";
 
 	position: absolute;
 	top: 27px;
@@ -333,7 +363,6 @@ img {
 .login-link:active::before {
 	opacity: 1;
 }
-
 
 .features {
 	margin-bottom: 85px;
@@ -356,74 +385,53 @@ img {
 	min-height: 170px;
 }
 
-.index-columns {
-	display: flex;
-	justify-content: space-between;
-	padding: 50px 80px;
-	margin-bottom: 35px;
-	min-height: 320px;
-}
-
 .news {
 	width: 380px;
 }
 
-.news > h2 {
-	margin: 0;
-	margin-bottom: 20px;
-}
-
 .news-list {
 	margin: 0;
+	margin-bottom: 25px;
 	padding: 0;
+
+	list-style: none;
+}
+
+.news-list time {
+	text-transform: none;
 }
 
 .news-item {
-	margin: 20px 0;
+	margin-bottom: 20px;
 }
 
 .news-item > p {
 	margin: 0;
 }
 
-.button {
-}
+.gallery-button{
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
 
-.gallery {
-	width: 300px;
-}
-
-.gallery > h2 {
+	width: 140px;
 	margin: 0;
-	margin-bottom: 20px;
 }
 
-.gallery-content {
-	margin: 0;
-	padding: 0;
-	margin-bottom: 30px;
+.gallery-button-back {
+	left: 0;
 }
 
-.button.gallery-button.gallery-button-back {
-}
-.button.gallery-button.gallery-button-next {
+.gallery-button-next {
+	right: 0;
 }
 
 .contacts {
 	width: 350px;
 }
 
-.contacts > h2 {
-	margin: 0;
-}
-
 .appointment {
 	width: 300px;
-}
-
-.appointment > h2 {
-	margin: 0;
-	margin-bottom: 20px;
 }
 
 .appointment-info {
