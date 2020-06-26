@@ -389,15 +389,46 @@ a {
 }
 
 .main-footer {
+	padding: 60px 0;
+	margin-top: 65px;
+
+	min-height: 180px;
 }
+
+.main-footer .container {
+	display: flex;
+}
+
 .footer-contacts {
+	width: 320px;
+	margin: 0;
+	margin-right: 80px;
+
+	min-height: 100px;
 }
+
 .footer-social {
+	width: 145px;
+	min-height: 100px;
 }
+
+.footer-social > ul {
+	display: flex;
+}
+
 .social-button {
 }
+
 .footer-copyright {
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+	margin: 0;
+	margin-left: auto;
+
+	min-height: 100px;
 }
+
 .modal.modal-login {
 }
 .login-form {
