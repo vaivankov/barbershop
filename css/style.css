@@ -31,21 +31,21 @@ a {
 }
 
 .button {
-  font: inherit;
+	font: inherit;
 
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
 
-  background-color: #000000;
-  border: none;
+	background-color: #000000;
+	border: none;
 }
 
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: #663d15;
+	background-color: #663d15;
 }
 
 .main-navigation {
@@ -109,19 +109,19 @@ a {
 }
 
 .gallery-content {
-  background: #cccccc;
-  border: 7px solid #ffffff;
+	background: #cccccc;
+	border: 7px solid #ffffff;
 }
 
 .appointment-item input {
-  font: inherit;
+	font: inherit;
 
-  background-color: transparent;
-  border: 2px solid #000000;
+	background-color: transparent;
+	border: 2px solid #000000;
 }
 
 .appointment-item input:focus {
-  border-color: #663d15;
+	border-color: #663d15;
 }
 
 .main-footer {
@@ -185,7 +185,7 @@ a {
 	font: inherit;
 	color: #000000;
 	text-transform: uppercase;
-	
+
 	background-color: #f9f6f3;
 	border: 2px solid #000000;
 }
@@ -209,7 +209,7 @@ a {
 	text-decoration: none;
 }
 
-.container{
+.container {
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
@@ -290,7 +290,8 @@ a {
 	display: flex;
 	justify-content: space-between;
 	padding: 50px 80px;
-	margin-bottom: 30px;
+	margin-bottom: 35px;
+	min-height: 320px;
 }
 
 .news {
@@ -308,6 +309,11 @@ a {
 }
 
 .news-item {
+	margin: 20px 0;
+}
+
+.news-item > p {
+	margin: 0;
 }
 
 .button {
@@ -332,16 +338,56 @@ a {
 }
 .button.gallery-button.gallery-button-next {
 }
+
 .contacts {
+	width: 350px;
 }
+
+.contacts > h2 {
+	margin: 0;
+}
+
 .appointment {
+	width: 300px;
 }
+
+.appointment > h2 {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
 .appointment-info {
+	margin: 0;
+	margin-bottom: 10px;
 }
+
 .appointment-form {
 }
-.appointment-item {
+
+.appointment-wrapper {
+	display: flex;
+	justify-content: space-between;
 }
+
+.appointment-wrapper:last-of-type {
+	margin-bottom: 15px;
+}
+
+.appointment-item {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.appointment-item > input {
+	min-height: 40px;
+	width: 135px;
+}
+
+.appointment-item > label {
+	margin-bottom: 10px;
+}
+
 .main-footer {
 }
 .footer-contacts {
