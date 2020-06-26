@@ -1,3 +1,14 @@
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -217,7 +228,7 @@ a {
 .main-header-logo {
 	order: 2;
 	width: 368px;
-	height: 153px;
+	min-height: 153px;
 }
 
 .main-navigation-wrapper {
@@ -253,16 +264,24 @@ a {
 
 	list-style: none;
 }
-.login-link {
-}
-.visually-hidden {
-}
-.features {
-}
+
 .features-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	min-height: 170px;
 }
+
 .feature-item {
+	width: 280px;
+
+	min-height: 170px;
 }
+
 .index-columns {
 }
 .news {
