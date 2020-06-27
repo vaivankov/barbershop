@@ -705,8 +705,19 @@ img {
 	transform: rotate(-45deg);
 }
 
-.checkbox-indicator {
+.modal-map {
+	top: 50%;
+	left: 50%;
+
+	display: none;
+	width: 766px;
+	height: 561px;
+	margin-top: -280px;
+	margin-left: -390px;
+
+	border: 7px solid white;
 }
 
-.modal-map {
+.modal-map p {
+	margin: 0;
 }
