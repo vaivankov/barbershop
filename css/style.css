@@ -829,6 +829,10 @@ img {
 	padding: 50px 80px;
 }
 
+.modal-show{
+	display: block;
+}
+
 .modal-login h2 {
 	margin: 0;
 	margin-bottom: 20px;
