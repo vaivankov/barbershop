@@ -13,134 +13,82 @@
 
 <body class="inner-page">
 
+
   <header class="main-header">
-    <nav class="main-navigation container">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/icon/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="price.html">Прайс-лист</a></li>
-        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li>
-          <a class="login-link" href="login.html">
-            Вход
-          </a>
-        </li>
-      </ul>
+    <nav class="main-navigation">
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <a class="main-logo" href="index.html"><img src="img/icon/logo.svg" width="111" height="24"
+              alt="Логотип барбершопа «Бородинский»"></a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li class="site-navigation-current"><a>Прайс-лист</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li>
+              <a class="login-link" href="login.html">
+                Вход
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main class="container">
 
     <div class="inner-page-container">
-      <h1 class="page-title">Средства для ухода</h1>
-      <ul>
+      <h1 class="page-title">Прайс-лист</h1>
+      <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li class="breadcrumbs-current">Прайс-лист</li>
         <li><a>Средства для ухода</a></li>
       </ul>
     </div>
-    <section>
-      <h2>Каталог товаров</h2>
-      <div>
-        <form class="filter" method="GET" action="">
-          <fieldset>
-            <legend>Производители:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
-                <label for="filter-baxter-of-california">
-                  Baxter of California
-                </label>
-              </li>
-              <li>
-                <input type="checkbox" name="mr-natty" id="filter-mr-natty">
-                <label for="filter-mr-natty">
-                  Mr Natty
-                </label>
-              </li>
-              <li>
-                <input type="checkbox" name="suavecito" id="filter-suavecito" checked>
-                <label for="filter-suavecito">
-                  Suavecito
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Группы товаров:</legend>
-            <ul>
-              <li>
-                <input type="radio" name="product-group" value="shaving" id="filter-shave">
-                <label for="filter-shave">
-                  Бритвенные принадлежности
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="product-group" value="hair-care" id="filter-care" checked>
-                <label for="filter-care">
-                  Средства для ухода
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="product-group" value="accessories" id="filter-accessories">
-                <label for="filter-accessories">
-                  Аксессуары
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button type="submit">Показать</button>
-        </form>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <img src="" alt="">
-            <p><span></span></p>
-            <span></span><button type="button"></button>
-          </li>
-          <li>
-            <img src="" alt="">
-            <p><span></span></p>
-            <span></span><button type="button"></button>
-          </li>
-          <li>
-            <img src="" alt="">
-            <p><span></span></p>
-            <span></span><button type="button"></button>
-          </li>
-          <li>
-            <img src="" alt="">
-            <p><span></span></p>
-            <span></span><button type="button"></button>
-          </li>
-          <li>
-            <img src="" alt="">
-            <p><span></span></p>
-            <span></span><button type="button"></button>
-          </li>
-          <li>
-            <img src="" alt="">
-            <p><span></span></p>
-            <span></span><button type="button"></button>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><button type="button">1</button></li>
-          <li><button type="button">2</button></li>
-          <li><button type="button">3</button></li>
-          <li><button type="button">4</button></li>
-        </ul>
-      </div>
+
+    <section class="inner-content">
+
+      <h2>Истинно мужская классика</h2>
+
+      <h3>Мы используем только лучшие средства:</h3>
+      <ul>
+        <li>Baxter of California</li>
+        <li>Mr Natty</li>
+        <li>Suavecito</li>
+        <li>Mali+Goetz</li>
+      </ul>
+
+      <h3>Цены на услуги наших мастеров:</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>Стрижка</td>
+            <td>1500 &#8381;</td>
+          </tr>
+          <tr>
+            <td>Стрижка бороды</td>
+            <td>500 &#8381;</td>
+          </tr>
+          <tr>
+            <td>Накрутка усов</td>
+            <td>350 &#8381;</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Несколько слов о нас:</h3>
+      <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это
+        уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+      <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в
+        обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и
+        свободно!</p>
+
     </section>
+
   </main>
 
   <footer class="main-footer">
