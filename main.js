@@ -1,11 +1,14 @@
 'use strict';
 
+window.mapLinks = document.querySelectorAll('[href="map.html"]');
+window.modalMap = document.querySelector('.modal-map');
+window.modalMapCloseBTN = document.querySelector('.modal-map-close');
 window.loginLink = document.querySelector('.login-link');
-window.loginPopup = document.querySelector('.modal-login');
-window.loginPopupClose = document.querySelector('.modal-close');
-window.loginPopupForm = loginPopup.querySelector('form');
-window.loginPopupLogin = loginPopup.querySelector('[name=login]');
-window.loginPopupPassword = loginPopup.querySelector('[name=password]');
+window.modalLogin = document.querySelector('.modal-login');
+window.modalLoginCloseBTN = document.querySelector('.modal-login-close');
+window.modalLoginForm = modalLogin.querySelector('form');
+window.modalLoginLoginInput = modalLogin.querySelector('[name=login]');
+window.modalLoginPasswordInput = modalLogin.querySelector('[name=password]');
 window.isStorageSupport = true;
 window.storage = "";
 
@@ -16,15 +19,19 @@ try {
 }
 
 (function () {
-  window.showModalWidow = function (evt) {
+  window.showModalWidow = function (evt, modal) {
     evt.preventDefault();
-    window.loginPopup.classList.add('modal-show')
+    modal.classList.add('modal-show')
+  }
+})();
 
+(function () {
+  window.checkLocalStorage = function (evt) {
     if (storage) {
-      window.loginPopupLogin.value = window.storage;
-      window.loginPopupPassword.focus();
+      window.modalLoginLoginInput.value = window.storage;
+      window.modalLoginPasswordInput.focus();
     } else {
-      window.loginPopupLogin.focus();
+      window.modalLoginLoginInput.focus();
     }
   }
 })();
@@ -32,21 +39,27 @@ try {
 (function () {
   window.closeModalWindow = function (evt) {
     evt.preventDefault();
-    window.loginPopup.classList.remove('modal-show');
-    window.loginPopup.classList.remove('modal-error');
+    let modal;
+    try {
+      modal = document.querySelector(".modal-show");
+    } catch (err) { };
+    if (modal) {
+      modal.classList.remove("modal-show")
+      modal.classList.remove('modal-error');
+    };
   }
 })();
 
 (function () {
   window.validateForm = function (evt) {
-    if (!window.loginPopupLogin.value || !window.loginPopupPassword.value) {
+    if (!window.modalLoginLoginInput.value || !window.modalLoginPasswordInput.value) {
       evt.preventDefault();
-      window.loginPopup.classList.remove('modal-error');
-      window.loginPopup.scrollLeft = loginPopup.scrollLeft;
-      window.loginPopup.classList.add('modal-error');
+      window.modalLogin.classList.remove('modal-error');
+      window.modalLogin.scrollLeft = modalLogin.scrollLeft;
+      window.modalLogin.classList.add('modal-error');
     } else {
       if (window.isStorageSupport) {
-        window.localStorage.setItem("login", window.loginPopupLogin.value)
+        window.localStorage.setItem("login", window.modalLoginLoginInput.value)
       }
     }
   }
@@ -67,7 +80,10 @@ try {
   }
 })();
 
-window.loginLink.addEventListener('click', showModalWidow);
-window.loginPopupClose.addEventListener('click', closeModalWindow);
-window.loginPopupForm.addEventListener('submit', validateForm);
+mapLinks[0].addEventListener('click', function () { showModalWidow.call(event, event, window.modalMap) });
+mapLinks[1].addEventListener('click', function () { showModalWidow.call(event, event, window.modalMap) });
+modalMapCloseBTN.addEventListener('click', closeModalWindow);
+loginLink.addEventListener('click', function () { showModalWidow.call(event, event, window.modalLogin) });
+modalLoginCloseBTN.addEventListener('click', closeModalWindow);
+modalLoginForm.addEventListener('submit', validateForm);
 window.addEventListener('keydown', checkIsHotKey);
