@@ -548,7 +548,7 @@ img {
 }
 
 .container {
-	width: 940px;
+	width: 930px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -591,7 +591,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 510px;
+	width: 540px;
 	margin: 0;
 	margin-right: auto;
 	padding: 0;
