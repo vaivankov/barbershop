@@ -2,6 +2,7 @@
 
 window.mapLinks = document.querySelectorAll('[href="map.html"]');
 window.modalMap = document.querySelector('.modal-map');
+window.modalMapImg = modalMap.querySelector('img');
 window.modalMapCloseBTN = document.querySelector('.modal-map-close');
 window.loginLink = document.querySelector('.login-link');
 window.modalLogin = document.querySelector('.modal-login');

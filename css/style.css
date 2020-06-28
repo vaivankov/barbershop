@@ -931,6 +931,14 @@ img {
 	opacity: 0.3;
 }
 
+.modal-map-container iframe {
+	max-width: 100%;
+}
+
+.modal-map-container img {
+	cursor: pointer;
+}
+
 .modal-show-animation {
 	animation: bounce 0.6s;
 }
