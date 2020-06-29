@@ -652,11 +652,12 @@ img {
 }
 
 .main-header-logo {
-	order: 2;
+	margin: 0 auto;
+	
 	width: 368px;
 	min-height: 153px;
 
-	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
 .main-logo {
