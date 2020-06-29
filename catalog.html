@@ -54,98 +54,98 @@
     </div>
     <section>
       <h2 class="visually-hidden">Каталог товаров</h2>
-      <div>
-        <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Производители:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
-                <label for="filter-baxter-of-california">
-                  Baxter of California
-                </label>
-              </li>
-              <li>
-                <input type="checkbox" name="mr-natty" id="filter-mr-natty">
-                <label for="filter-mr-natty">
-                  Mr Natty
-                </label>
-              </li>
-              <li>
-                <input type="checkbox" name="suavecito" id="filter-suavecito" checked>
-                <label for="filter-suavecito">
-                  Suavecito
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Группы товаров:</legend>
-            <ul>
-              <li>
-                <input type="radio" name="product-group" value="shaving" id="filter-shave">
-                <label for="filter-shave">
-                  Бритвенные принадлежности
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="product-group" value="hair-care" id="filter-care" checked>
-                <label for="filter-care">
-                  Средства для ухода
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="product-group" value="accessories" id="filter-accessories">
-                <label for="filter-accessories">
-                  Аксессуары
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button type="submit">Показать</button>
-        </form>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <img src="img/goods/Trip tools Baxter of California.jpg" alt="Фото товара: 'Набор для путешествий  «Baxter of California»' ">
-            <p><span></span></p>
-            <span></span><button type="button">Купить</button>
-          </li>
-          <li>
-            <img src="img/goods/Water Baxter of California.jpg" alt="Фото товара: 'Увлажняющий кондиционер  «Baxter of California»' ">
-            <p><span></span></p>
-            <span></span><button type="button">Купить</button>
-          </li>
-          <li>
-            <img src="img/goods/Gel SUAVECITO.jpg" alt="Фото товара: 'Гель для волос «SUAVECITO»' ">
-            <p><span></span></p>
-            <span></span><button type="button">Купить</button>
-          </li>
-          <li>
-            <img src="img/goods/Clay American crew.jpg" alt="Фото товара: 'Глина для укладки волос  «American crew»' ">
-            <p><span></span></p>
-            <span></span><button type="button">Купить</button>
-          </li>
-          <li>
-            <img src="img/goods/Gel American crew.jpg" alt="Фото товара: 'Гель для волос «AMERICAN CREW»' ">
-            <p><span></span></p>
-            <span></span><button type="button">Купить</button>
-          </li>
-          <li>
-            <img src="img/goods/Shaving tools Baxter of California.jpg" alt="Фото товара: 'Набор для бритья «Baxter of California»' ">
-            <p><span></span></p>
-            <span></span><button type="button">Купить</button>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li><button type="button">1</button></li>
-          <li><button type="button">2</button></li>
-          <li><button type="button">3</button></li>
-          <li><button type="button">4</button></li>
-        </ul>
+      <div class="goods-wrapper">
+        <div>
+          <form class="goods-filter" method="GET" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Производители:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+                  <label for="filter-baxter-of-california">
+                    Baxter of California
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="mr-natty" id="filter-mr-natty">
+                  <label for="filter-mr-natty">
+                    Mr Natty
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" name="suavecito" id="filter-suavecito" checked>
+                  <label for="filter-suavecito">
+                    Suavecito
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Группы товаров:</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="product-group" value="shaving" id="filter-shave">
+                  <label for="filter-shave">
+                    Бритвенные принадлежности
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="product-group" value="hair-care" id="filter-care" checked>
+                  <label for="filter-care">
+                    Средства для ухода
+                  </label>
+                </li>
+                <li>
+                  <input type="radio" name="product-group" value="accessories" id="filter-accessories">
+                  <label for="filter-accessories">
+                    Аксессуары
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button" type="submit">Показать</button>
+          </form>
+        </div>
+        <div class="goods-preview">
+          <ul class="goods-list">
+            <li>
+              <img src="img/goods/Trip tools Baxter of California.jpg" alt="Фото товара: 'Набор для путешествий  «Baxter of California»' ">
+              <p>Набор для путешествий <span>«Baxter of California»</span></p>
+              <span>2900 &#8381;</span><button class="button" type="button">Купить</button>
+            </li>
+            <li>
+              <img src="img/goods/Water Baxter of California.jpg" alt="Фото товара: 'Увлажняющий кондиционер  «Baxter of California»' ">
+              <p>Увлажняющий кондиционер <span>«Baxter of California»</span></p>
+              <span>750 &#8381;</span><button class="button" type="button">Купить</button>
+            </li>
+            <li>
+              <img src="img/goods/Gel SUAVECITO.jpg" alt="Фото товара: 'Гель для волос «SUAVECITO»' ">
+              <p>Гель для волос <span>«SUAVECITO»</span></p>
+              <span>290 &#8381;</span><button class="button" type="button">Купить</button>
+            </li>
+            <li>
+              <img src="img/goods/Clay American crew.jpg" alt="Фото товара: 'Глина для укладки волос  «American crew»' ">
+              <p>Гель для волос <span>«SUAVECITO»</span></p>
+              <span>500 &#8381;</span><button class="button" type="button">Купить</button>
+            </li>
+            <li>
+              <img src="img/goods/Gel American crew.jpg" alt="Фото товара: 'Гель для волос «AMERICAN CREW»' ">
+              <p>Гель для волос <span>«AMERICAN CREW»</span></p>
+              <span>300 &#8381;</span><button class="button" type="button">Купить</button>
+            </li>
+            <li>
+              <img src="img/goods/Shaving tools Baxter of California.jpg" alt="Фото товара: 'Набор для бритья «Baxter of California»' ">
+              <p>Набор для бритья <span>«Baxter of California»</span></p>
+              <span>3900 &#8381;</span><button class="button" type="button">Купить</button>
+            </li>
+          </ul>
+          <ul class="goods-buttons">
+            <li><button class="button goods-button" type="button">1</button></li>
+            <li><button class="button goods-button" type="button" disabled>2</button></li>
+            <li><button class="button goods-button" type="button">3</button></li>
+            <li><button class="button goods-button" type="button">4</button></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
