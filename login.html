@@ -11,19 +11,19 @@
   <title>Барбершоп «Бородинский»</title>
 </head>
 
-<body>
+<body class="inner-page">
+
 
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/icon/index-logo.svg" width="371" height="155" alt="Логотип барбершопа «Бородинский»">
-      </a>
       <div class="main-navigation-wrapper">
         <div class="container">
+          <a class="main-logo" href="index.html"><img src="img/icon/logo.svg" width="111" height="24"
+              alt="Логотип барбершопа «Бородинский»"></a>
           <ul class="site-navigation">
             <li><a href="info.html">Информация</a></li>
             <li><a href="news.html">Новости</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>
+            <li class="site-navigation-current"><a>Прайс-лист</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
@@ -39,34 +39,35 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
-    <section>
-      <h2>Личный кабинет</h2>
-      <p class="modal-description">Введите свой логин и пароль</p>
-      <form class="login-form" method="POST" action="https://echo.htmlacademy.ru">
-        <p>
-          <label class="visually-hidden" for="user-login">Логин</label>
-          <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Пароль</label>
-          <input class="login-icon-password" id="user-password" type="password" name="password"
-            placeholder="&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149">
-        </p>
-        <p class="login-help">
-          <label class="login-checkbox">
-            <input type="checkbox" name="remember" class="visually-hidden">
-            <span class="checkbox-indicator"></span>
-            Запомнить меня
-          </label>
-          <a class="restore" href="#">Я забыл пароль!</a>
-        </p>
-        <button class="button" type="submit">Войти</button>
-      </form>
-      <button class="modal-close modal-login-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
+    <section class="inner-content">
+
+      <div class="login-wrapper">
+        <h2>Личный кабинет</h2>
+        <p class="modal-description">Введите свой логин и пароль</p>
+        <form class="login-form" method="POST" action="https://echo.htmlacademy.ru">
+          <p>
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="login-icon-password" id="user-password" type="password" name="password"
+              placeholder="&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149">
+          </p>
+          <p class="login-help">
+            <label class="login-checkbox">
+              <input type="checkbox" name="remember" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Запомнить меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+          </p>
+          <button class="button" type="submit">Войти</button>
+        </form>
+      </div>
+
     </section>
 
   </main>
@@ -122,6 +123,34 @@
       </p>
     </div>
   </footer>
+
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p class="modal-description">Введите свой логин и пароль</p>
+    <form class="login-form" method="POST" action="https://echo.htmlacademy.ru">
+      <p>
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="email@example.com">
+      </p>
+      <p>
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input class="login-icon-password" id="user-password" type="password" name="password"
+          placeholder="&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149&#149">
+      </p>
+      <p class="login-help">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+          Запомнить меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+      </p>
+      <button class="button" type="submit">Войти</button>
+    </form>
+    <button class="modal-close modal-login-close" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
 
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
