@@ -494,17 +494,21 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 0;
-	transform: translate(0,-50%);
+	transform: translate(0, -50%);
 
 	width: 17px;
 	height: 17px;
-	
+
 	border: 2px solid #000000;
 }
 
 .good-radio input[type="radio"] + .radio-indicator {
 	width: 15px;
 	height: 15px;
+
+	top: 2px;
+	left: 0;
+	transform: initial;
 
 	border-radius: 50%;
 }
@@ -553,7 +557,7 @@ img {
 	top: 50%;
 	left: 50%;
 
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 
 	width: 7px;
 	height: 7px;
@@ -568,6 +572,38 @@ img {
 .login-checkbox:hover,
 .login-checkbox:focus {
 	color: #663d15;
+}
+
+.good-title {
+	text-transform: initial;
+
+	line-height: 18px;
+}
+
+.good-title span {
+	text-transform: uppercase;
+}
+
+.good-buy {
+	display: flex;
+}
+
+.good-buy button {
+	margin-right: 0;
+	padding: 10px 20px;
+}
+
+.good-price {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+	font: inherit;
+	color: black;
+	
+	background-color: #0000001a;
+	border: none;
 }
 
 .login-icon-user {
@@ -1042,17 +1078,29 @@ img {
 }
 
 .goods-buttons {
-	list-style: none;
 	display: flex;
+
+	padding: 0;
+
+	list-style: none;
 }
 
-.goods-button {
+.good-button {
+	margin-right: 5px;
+	padding: 10px 20px;
+}
+
+.good-button:disabled {
+	opacity: initial;
+	
+	background-color: #fff;
+	color: #000;
 }
 
 .goods-filter {
 	width: 365px;
 
-	margin-right: 75px;
+	margin-right: 45px;
 }
 
 .goods-filter fieldset {
@@ -1082,18 +1130,38 @@ img {
 .goods-list {
 	display: flex;
 	flex-wrap: wrap;
-	
+	justify-content: space-between;
+
+	min-height: 600px;
+
 	margin: 0;
+	margin-bottom: 30px;
 	padding: 0;
 
 	list-style: none;
 }
 
 .goods-list li {
+	position: relative;
+
+	width: 190px;
+	height: 260px;
+	padding: 10px 15px;
+
 	background-color: #fff;
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.goods-preview {
+.good-img {
+	max-width: 100%;
+	min-height: 150px;
+}
+
+.good-img img {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .goods-wrapper {
