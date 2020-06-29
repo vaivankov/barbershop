@@ -473,6 +473,7 @@ img {
 	border-color: #663d15;
 }
 
+.good-radio,
 .good-checkbox,
 .login-checkbox {
 	position: relative;
@@ -482,20 +483,34 @@ img {
 	cursor: pointer;
 }
 
+.good-radio,
 .good-checkbox {
 	padding-left: 45px;
 }
 
+.good-radio input[type="radio"] + .radio-indicator,
 .good-checkbox input[type="checkbox"] + .checkbox-indicator,
 .login-checkbox input[type="checkbox"] + .checkbox-indicator {
 	position: absolute;
-	top: 0;
+	top: 50%;
 	left: 0;
+	transform: translate(0,-50%);
 
 	width: 17px;
 	height: 17px;
-
+	
 	border: 2px solid #000000;
+}
+
+.good-radio input[type="radio"] + .radio-indicator {
+	width: 15px;
+	height: 15px;
+
+	border-radius: 50%;
+}
+
+.good-radio {
+	display: block;
 }
 
 .good-checkbox input[type="checkbox"]:focus + .checkbox-indicator,
@@ -513,9 +528,9 @@ img {
 
 	position: absolute;
 	top: 7px;
-	left: 1px;
+	left: 3px;
 
-	width: 15px;
+	width: 11px;
 	height: 2px;
 
 	background-color: #000000;
@@ -529,6 +544,23 @@ img {
 .good-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after,
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
 	transform: rotate(-45deg);
+}
+
+.good-radio input[type="radio"]:checked + .radio-indicator::before {
+	content: "";
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%,-50%);
+
+	width: 7px;
+	height: 7px;
+
+	border-radius: 50%;
+
+	background-color: #000000;
 }
 
 .good-checkbox:hover,
@@ -1018,9 +1050,9 @@ img {
 }
 
 .goods-filter {
-	width: 400px;
+	width: 365px;
 
-	margin-right: 55px;
+	margin-right: 75px;
 }
 
 .goods-filter fieldset {
