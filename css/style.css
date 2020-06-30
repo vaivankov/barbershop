@@ -594,6 +594,7 @@ img {
 	white-space: nowrap;
 	overflow: hidden;
 
+	color: #000000;
 	line-height: 18px;
 }
 
@@ -1163,9 +1164,19 @@ img {
 	height: 260px;
 	padding: 10px 15px;
 	margin: 10px 0;
-
+	
 	background-color: #ffffff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	
+	transition: all 0.5s;
+}
+
+.goods-list li:hover {
+	transform: scale(1.1);
+}
+
+.goods-list li:hover:first-child {
+	cursor: pointer;
 }
 
 .good-img {
