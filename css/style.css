@@ -583,6 +583,10 @@ img {
 .good-title {
 	text-transform: initial;
 
+	text-overflow: ellipsis;
+	white-space  : nowrap;
+	overflow     : hidden;
+
 	line-height: 18px;
 }
 
@@ -604,6 +608,10 @@ img {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
+
+	text-overflow: ellipsis;
+	white-space  : nowrap;
+	overflow     : hidden;
 
 	font: inherit;
 	color: black;
@@ -1150,10 +1158,11 @@ img {
 
 .goods-list li {
 	position: relative;
-
+	
 	width: 190px;
 	height: 260px;
 	padding: 10px 15px;
+	margin: 10px 0;
 
 	background-color: #fff;
 
