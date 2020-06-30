@@ -1,3 +1,13 @@
+/*
+	Порядок сортировки CSS свойств
+	1. Позиционирование
+	2. Блочная модель
+	3. Типографика
+	4. Оформление
+	5. Анимация
+	6. Разное
+*/
+
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden,
 .visually-hidden:not(:focus):not(:active) {
@@ -81,11 +91,11 @@ img {
 }
 
 .main-navigation {
+	margin-bottom: 60px;
+
 	font-size: 16px;
 	line-height: 20px;
 	color: #ffffff;
-
-	margin-bottom: 60px;
 
 	background-color: #000000;
 }
@@ -129,8 +139,6 @@ img {
 }
 
 .feature-item h3::after {
-	content: "";
-
 	position: absolute;
 	bottom: -30px;
 	left: 50%;
@@ -142,6 +150,7 @@ img {
 	background-color: #ffffff;
 
 	transform: rotate(45deg);
+	content: "";
 }
 
 .feature-item p {
@@ -216,7 +225,6 @@ img {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-
 	margin: 60px 0;
 }
 
@@ -277,7 +285,7 @@ img {
 .inner-content td {
 	padding: 10px 15px;
 
-	border: 2px solid #000;
+	border: 2px solid #000000;
 }
 
 .inner-content .big-heading {
@@ -294,15 +302,14 @@ img {
 
 .big-heading::before,
 .big-heading::after {
-	content: "";
-
 	flex-grow: 1;
 	flex-shrink: 0;
 
 	width: 50px;
 	height: 2px;
 
-	background: #000;
+	background: #000000;
+	content: "";
 }
 
 .big-heading::before {
@@ -328,8 +335,6 @@ img {
 }
 
 .custom-list-1 li::before {
-	content: "";
-
 	position: absolute;
 	top: 7px;
 	left: 0;
@@ -337,8 +342,9 @@ img {
 	width: 7px;
 	height: 7px;
 
-	background-color: #000;
+	background-color: #000000;
 	transform: rotate(45deg);
+	content: "";
 }
 
 .custom-table-1 {
@@ -395,7 +401,6 @@ img {
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 10px;
-
 	width: 43px;
 	height: 43px;
 
@@ -444,13 +449,12 @@ img {
 
 .login-wrapper {
 	margin: 0 auto;
-	
 	width: 300px;
 }
 
 .login-form .button {
-	width: 100%;
 	margin-right: 0;
+	width: 100%;
 }
 
 .login-form .login-help {
@@ -534,8 +538,6 @@ img {
 .good-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after,
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-	content: "";
-
 	position: absolute;
 	top: 7px;
 	left: 3px;
@@ -544,6 +546,7 @@ img {
 	height: 2px;
 
 	background-color: #000000;
+	content: "";
 }
 
 .good-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
@@ -557,8 +560,6 @@ img {
 }
 
 .good-radio input[type="radio"]:checked + .radio-indicator::before {
-	content: "";
-
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -571,6 +572,7 @@ img {
 	border-radius: 50%;
 
 	background-color: #000000;
+	content: "";
 }
 
 .good-checkbox:hover,
@@ -582,10 +584,9 @@ img {
 
 .good-title {
 	text-transform: initial;
-
 	text-overflow: ellipsis;
-	white-space  : nowrap;
-	overflow     : hidden;
+	white-space: nowrap;
+	overflow: hidden;
 
 	line-height: 18px;
 }
@@ -610,12 +611,11 @@ img {
 	align-items: center;
 
 	text-overflow: ellipsis;
-	white-space  : nowrap;
-	overflow     : hidden;
-
+	white-space: nowrap;
+	overflow: hidden;
 	font: inherit;
 	color: black;
-	
+
 	background-color: #0000001a;
 	border: none;
 }
@@ -661,10 +661,8 @@ img {
 
 .main-header-logo {
 	margin: 0 auto;
-	
 	width: 368px;
 	min-height: 153px;
-
 	margin-bottom: 60px;
 }
 
@@ -700,16 +698,16 @@ img {
 }
 
 .site-navigation-current::after {
-	content: "";
-	width: 70%;
-
+	position: absolute;
 	bottom: 0;
 	left: 50%;
-
 	transform: translate(-50%, 0);
 
-	position: absolute;
+	width: 70%;
+
 	border-bottom: 5px solid white;
+	
+	content: "";
 }
 
 .user-navigation {
@@ -728,19 +726,19 @@ img {
 }
 
 .login-link::before {
-	content: "";
-
 	position: absolute;
 	top: 27px;
 	left: 24px;
+
+	width: 16px;
+	height: 18px;
 
 	background-image: url("../img/icon/login.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	opacity: 0.3;
 
-	width: 16px;
-	height: 18px;
+	content: "";
 }
 
 .login-link:hover::before,
@@ -795,10 +793,10 @@ img {
 }
 
 .gallery-button {
-	box-sizing: border-box;
 	position: absolute;
 	bottom: 0;
-
+	
+	box-sizing: border-box;
 	width: 140px;
 	margin: 0;
 }
@@ -870,10 +868,9 @@ img {
 
 .footer-contacts {
 	width: 320px;
+	min-height: 100px;
 	margin: 0;
 	margin-right: 80px;
-
-	min-height: 100px;
 }
 
 .footer-social {
@@ -919,7 +916,6 @@ img {
 	left: 50%;
 
 	display: none;
-
 	width: 300px;
 	margin-left: -230px;
 	padding: 50px 80px;
@@ -945,7 +941,6 @@ img {
 
 	width: 22px;
 	height: 22px;
-
 	border: 0;
 
 	background-color: transparent;
@@ -955,8 +950,6 @@ img {
 
 .modal-close::before,
 .modal-close::after {
-	content: "";
-
 	position: absolute;
 	top: 10px;
 	left: 2px;
@@ -965,6 +958,7 @@ img {
 	height: 3px;
 
 	background-color: #d0d0d0;
+	content: "";
 }
 
 .modal-close::before {
@@ -984,7 +978,6 @@ img {
 	height: 561px;
 	margin-top: -280px;
 	margin-left: -390px;
-
 	border: 7px solid white;
 }
 
@@ -995,6 +988,7 @@ img {
 .breadcrumbs {
 	padding: 0;
 	display: flex;
+
 	list-style: none;
 }
 
@@ -1009,18 +1003,18 @@ img {
 }
 
 .breadcrumbs li:not(:last-of-type)::after {
-	content: "";
 	position: absolute;
 
 	top: 7px;
 	right: -24px;
 
-	transform: rotate(45deg);
-
 	height: 7px;
 	width: 7px;
 
 	background-color: #000000;
+
+	transform: rotate(45deg);
+	content: "";
 }
 
 .breadcrumbs-current {
@@ -1106,10 +1100,10 @@ img {
 }
 
 .good-button:disabled {
-	opacity: initial;
+	color: #000000;
 	
-	background-color: #fff;
-	color: #000;
+	opacity: initial;
+	background-color: #ffffff;
 }
 
 .goods-filter {
@@ -1131,8 +1125,9 @@ img {
 }
 
 .goods-filter legend {
-	font-size: 24px;
 	margin-bottom: 20px;
+
+	font-size: 24px;
 }
 
 .goods-filter ul {
@@ -1147,10 +1142,9 @@ img {
 	flex-wrap: wrap;
 	justify-content: space-between;
 
-	min-height: 600px;
-
 	margin: 0;
 	margin-bottom: 30px;
+	min-height: 600px;
 	padding: 0;
 
 	list-style: none;
@@ -1158,14 +1152,13 @@ img {
 
 .goods-list li {
 	position: relative;
-	
+
 	width: 190px;
 	height: 260px;
 	padding: 10px 15px;
 	margin: 10px 0;
 
-	background-color: #fff;
-
+	background-color: #ffffff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -1181,7 +1174,6 @@ img {
 }
 
 .goods-wrapper {
-	margin-top: 50px;
-
 	display: flex;
+	margin-top: 50px;
 }
