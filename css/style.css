@@ -442,14 +442,20 @@ img {
 	line-height: 42px;
 }
 
+.login-page-wrapper {
+	margin: 0 auto;
+	width: 300px;
+}
+
+.map-page-wrapper {
+	margin: 0 auto;
+
+	text-align: center;
+}
+
 .login-form {
 	margin: 0;
 	margin-bottom: 10px;
-}
-
-.login-wrapper {
-	margin: 0 auto;
-	width: 300px;
 }
 
 .login-form .button {
