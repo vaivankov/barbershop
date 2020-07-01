@@ -1196,15 +1196,31 @@ img {
 }
 
 .content-wrapper {
+	margin-top: 60px;
 }
+
+.gallery-wrapper {
+	width: 455px;
+}
+
 .gallery {
 }
+
 .gallery-main-picture {
+	margin-bottom: 15px;
 }
+
+.gallery-picture{
+	background-color: #fff;
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);	
+}
+
 .gallery-preview {
+	display: flex;
+	justify-content: space-between;
 }
-.gallery-wrapper {
-}
+
 .item {
 }
 .item-description {
