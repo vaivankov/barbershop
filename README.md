@@ -8,4 +8,4 @@
 
 Автор макета: [HTML Academy](https://htmlacademy.ru/)
 
-Главная страница: [barbershop](https://vaivankov.github.io/barbershop/)
+Главная страница: [barbershop](https://vaivankov.github.io/html-barbershop-desktop/)
